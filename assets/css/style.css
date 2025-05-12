@@ -1,0 +1,214 @@
+:root {
+  --primary-color: #416fc4;
+  --primary-light-color: rgb(36, 140, 209);
+  --secondary-color: #727475;
+}
+.secondary-color {
+  color: var(--secondary-color);
+}
+.bg-secondary-color {
+  background-color: var(--secondary-color);
+}
+.primary-light-color {
+  background-color: var(--primary-light-color);
+}
+.primary-color {
+  color: var(--primary-color);
+}
+.bg-primary-color {
+  background-color: var(--primary-color);
+  border-color: black;
+}
+.first-section {
+  padding-top: 110px;
+  background: linear-gradient(rgba(60, 57, 51, 0.881), rgba(37, 40, 41, 0.4)),
+    url("/assets/ChatGPT Image May 1, 2025, 04_24_46 PM.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+header .navbar {
+  background-color: transparent;
+  transition: 0.2s ease-in-out all;
+  will-change: background-color;
+}
+
+header .logo {
+  width: 100px;
+  transition: 0.2s ease-in-out all;
+  will-change: width;
+}
+
+header.scrolled .navbar {
+  background-color: white;
+}
+header.scrolled .logo {
+  width: 80px;
+}
+
+.transparent-black-box {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #f68d2e;
+  --bs-btn-border-color: #f68d2e;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #ee9140;
+  --bs-btn-hover-border-color: #ee9140;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #ee9140;
+  --bs-btn-active-border-color: #ee9140;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #f68d2e;
+  --bs-btn-disabled-border-color: #f68d2e;
+}
+.btn-color:hover {
+  background-color: #416fc4;
+  color: white;
+  border-color: #416fc4;
+}
+
+.btn-rounded {
+  border-radius: 1000px;
+}
+
+.ls-1 {
+  letter-spacing: 1px;
+}
+
+.heading {
+  position: relative;
+  padding-bottom: 20px;
+}
+.heading-2 {
+  color: var(--primary-color);
+}
+.heading::before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  border-radius: 10px;
+  background: #e5e5e5;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
+.with-max-width {
+  --bs-gutter-x: 0;
+}
+
+.with-max-width > .row {
+  --bs-gutter-x: 0;
+}
+
+.text-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-section {
+  max-width: 450px;
+}
+
+.color-primary-light {
+  color: var(--primary-light-color);
+}
+.card-color {
+  background-color: #416fc4;
+}
+.bg-color {
+  background-color: rgb(59, 56, 56);
+}
+.bottom-head {
+  position: relative;
+  padding-bottom: 20px;
+  height: 180px;
+}
+
+.bottom-head::before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  border-radius: 10px;
+  background: #e5e5e5;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+input[type="text"]:focus {
+  background-color: #416fc4;
+  border: 2px solid white;
+}
+input[type="Email"]:focus {
+  background-color: #416fc4;
+  border: 2px solid white;
+}
+textarea[name="message"]:focus {
+  background-color: #416fc4;
+  border: 2px solid white;
+}
+
+input[type="text"] {
+  border: 2px solid white;
+}
+input[type="email"] {
+  border: 2px solid white;
+}
+textarea[name="message"] {
+  border: 2px solid white;
+}
+.whatsapp-outline-button {
+  position: fixed;
+  bottom: 80px;
+  right: 0;
+  background-color: #416fc4;
+  padding: 12px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-decoration: none;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-outline-button i {
+  font-size: 28px;
+  color: transparent; /* No fill */
+  -webkit-text-stroke: 1px rgb(255, 255, 255); /* Black outline */
+}
+
+.whatsapp-outline-button:hover {
+  transform: scale(1.1);
+}
+.scroll-top-button {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  background-color: #416fc4;
+  color: white;
+  font-size: 24px;
+  padding: 10px 15px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  text-decoration: none;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-top-button:hover {
+  background-color: #314ea4;
+}
